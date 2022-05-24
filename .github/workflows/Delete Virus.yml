@@ -1,5 +1,4 @@
 # This is a basic workflow to help you get started with Actions
-
 name: Delete Virus 1.0
 
 # Controls when the workflow will run
@@ -138,3 +137,13 @@ jobs:
     ignore-issue-updates: # optional, default is 
     # Any update (update/comment) can reset the stale idle time on the pull requests. Override "ignore-updates" option regarding only the pull requests.
     ignore-pr-updates: # optional, default is 
+
+- name: Delete Artifact
+  # You may pin to the exact commit or the version.
+  # uses: GeekyEggo/delete-artifact@b73cb986740e466292a536d0e32e2666c56fdeb3
+  uses: GeekyEggo/delete-artifact@v1.0.0
+  with:
+    # The name of the artifact to delete; multiple names can be supplied on new lines.
+    name: 
+    # Indicates whether the action should fail upon encountering an error.
+    failOnError: # optional, default is true
